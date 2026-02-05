@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ainesh Phanithi - Strategy Consultant</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Portfolio_Logo.png">
+    
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:title" content="Ainesh Phanithi - Strategy Consultant">
+    <meta property="og:description" content="Strategy Consultant specializing in Public Policy, Digital Transformation, and Innovation">
+    <meta property="og:image" content="https://aineshphanithi.github.io/aineshp.github.io/Portfolio_Logo.png">
+    <meta property="og:url" content="https://aineshphanithi.github.io/aineshp.github.io/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ainesh Phanithi - Strategy Consultant">
+    <meta name="twitter:description" content="Strategy Consultant specializing in Public Policy, Digital Transformation, and Innovation">
+    <meta name="twitter:image" content="https://aineshphanithi.github.io/aineshp.github.io/Portfolio_Logo.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --navy: #1e3a5f;
+            --deep-blue: #2c5282;
+            --slate: #475569;
+            --light-slate: #64748b;
+            --cream: #fefdfb;
+            --off-white: #f8fafc;
+            --sand: #f1f0ec;
+            --gold: #d4a574;
+            --burgundy: #7c2d3a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background-color: var(--cream);
+            color: var(--slate);
+            line-height: 1.7;
+        }
+
+        /* Header Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(254, 253, 251, 0.97);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(30, 58, 95, 0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .site-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--navy);
+            margin: 3px 0;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--slate);
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--gold);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--navy);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(135deg, var(--off-white) 0%, var(--cream) 100%);
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--burgundy);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .hero-bio {
+            font-size: 1.125rem;
+            line-height: 1.9;
+            color: var(--light-slate);
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1.25rem;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--navy);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--deep-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(30, 58, 95, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--navy);
+            border: 2px solid var(--navy);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--navy);
+            color: white;
+        }
+
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, var(--slate) 0%, var(--navy) 100%);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(30, 58, 95, 0.15);
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1.25rem;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 6rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-label {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.125rem;
+            color: var(--light-slate);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Research Interests */
+        .research {
+            background-color: white;
+        }
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .interest-card {
+            padding: 2.5rem;
+            background-color: var(--off-white);
+            border-left: 4px solid var(--gold);
+            transition: all 0.3s ease;
+        }
+
+        .interest-card:hover {
+            transform: translateX(8px);
+            box-shadow: 0 8px 24px rgba(30, 58, 95, 0.08);
+            border-left-color: var(--burgundy);
+        }
+
+        .interest-card h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+
+        .interest-card p {
+            color: var(--light-slate);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .interest-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .keyword {
+            padding: 0.375rem 0.875rem;
+            background-color: rgba(30, 58, 95, 0.08);
+            color: var(--navy);
+            font-size: 0.8rem;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        /* Professional Experience */
+        .experience {
+            background-color: var(--sand);
+        }
+
+        .experience-timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .experience-item {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 3rem;
+            margin-bottom: 3.5rem;
+            padding-bottom: 3.5rem;
+            border-bottom: 1px solid rgba(30, 58, 95, 0.1);
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .experience-date {
+            font-weight: 600;
+            color: var(--burgundy);
+            font-size: 0.95rem;
+        }
+
+        .experience-content h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-company {
+            font-size: 1.125rem;
+            color: var(--light-slate);
+            margin-bottom: 1.25rem;
+            font-weight: 500;
+        }
+
+        .experience-description {
+            color: var(--light-slate);
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+        }
+
+        .experience-achievements {
+            list-style: none;
+        }
+
+        .experience-achievements li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.625rem;
+            color: var(--slate);
+        }
+
+        .experience-achievements li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        /* Education & Academic Background */
+        .education {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--deep-blue) 100%);
+            color: white;
+        }
+
+        .education .section-title,
+        .education .section-label,
+        .education .section-description {
+            color: white;
+        }
+
+        .education .section-label {
+            color: var(--gold);
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+
+        .education-card {
+            background-color: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .education-card:hover {
+            background-color: rgba(255, 255, 255, 0.12);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .education-year {
+            font-size: 0.875rem;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .education-card h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .education-institution {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1.25rem;
+            font-weight: 500;
+        }
+
+        .education-details {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .education-honors {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .education-honors li {
+            padding-left: 1.25rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .education-honors li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+        }
+
+        /* Skills & Expertise */
+        .skills {
+            background-color: var(--off-white);
+        }
+
+        .skills-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .skill-category {
+            margin-bottom: 3rem;
+        }
+
+        .skill-category h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            padding: 0.625rem 1.25rem;
+            background-color: white;
+            border: 1px solid rgba(30, 58, 95, 0.15);
+            border-radius: 4px;
+            color: var(--slate);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background-color: var(--navy);
+            color: white;
+            border-color: var(--navy);
+            transform: translateY(-2px);
+        }
+
+        /* Projects/Case Studies */
+        .projects {
+            background-color: white;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+
+        .project-card {
+            background-color: var(--sand);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(30, 58, 95, 0.15);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 240px;
+            background: linear-gradient(135deg, var(--slate) 0%, var(--navy) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .project-card:hover .project-image::before {
+            left: 100%;
+        }
+
+        .project-category {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.375rem 0.875rem;
+            background-color: var(--burgundy);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-content h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.375rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            color: var(--light-slate);
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+        }
+
+        .project-outcomes {
+            font-size: 0.9rem;
+            color: var(--slate);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-metrics {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .project-metric {
+            font-size: 0.875rem;
+            color: var(--burgundy);
+            font-weight: 600;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--deep-blue) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(212, 165, 116, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .contact .section-header {
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact .section-label {
+            color: var(--gold);
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-container p {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 3.5rem;
+            line-height: 1.9;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--burgundy));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--gold);
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-item:hover::before {
+            transform: scaleX(1);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.25rem;
+            display: block;
+        }
+
+        .contact-label {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .contact-value {
+            font-size: 1.05rem;
+            color: white;
+            font-weight: 500;
+        }
+
+        .contact-value a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .contact-value a:hover {
+            color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        .contact-cta {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-cta .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+        }
+
+        .contact-cta .btn-primary {
+            background-color: var(--gold);
+            border-color: var(--gold);
+            color: var(--navy);
+        }
+
+        .contact-cta .btn-primary:hover {
+            background-color: #b8915f;
+            border-color: #b8915f;
+        }
+
+        .contact-cta .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .contact-cta .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: white;
+        }
+
+        /* Social Links Section */
+        .social-links {
+            background-color: var(--off-white);
+            padding: 4rem 2rem;
+            border-top: 1px solid rgba(30, 58, 95, 0.1);
+        }
+
+        .social-links .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .social-links-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 2.5rem;
+            font-weight: 600;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .social-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.5rem 1rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid rgba(30, 58, 95, 0.08);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(30, 58, 95, 0.12);
+            border-color: var(--gold);
+        }
+
+        .social-logo {
+            font-size: 2.5rem;
+            width: 50px;
+            height: 50px;
+            color: var(--navy);
+            transition: all 0.3s ease;
+        }
+
+        .social-item:hover .social-logo {
+            color: var(--gold);
+            transform: scale(1.15);
+        }
+
+        /* Specific icon colors */
+        .social-item:hover .fa-github {
+            color: #333;
+        }
+
+        .social-item:hover .fa-x-twitter {
+            color: #000;
+        }
+
+        .social-item:hover .fa-medium {
+            color: #00ab6c;
+        }
+
+        .social-item:hover .fa-linkedin {
+            color: #0077b5;
+        }
+
+        /* SVG icons */
+        svg.social-logo {
+            display: block;
+        }
+
+        .social-name {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .social-item:hover .social-name {
+            color: var(--gold);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.875rem;
+        }
+
+        /* Responsive Design */
+
+        /* Mobile Navigation */
+        @media (max-width: 968px) {
+            .hamburger {
+                display: flex;
+                order: 3;
+            }
+
+            nav {
+                order: 2;
+            }
+
+            .header-container img {
+                order: 1;
+            }
+
+            nav ul {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: var(--cream);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 3rem 2rem;
+                gap: 2rem;
+                transition: right 0.3s ease;
+                box-shadow: 0 4px 12px rgba(30, 58, 95, 0.1);
+                z-index: 999;
+                display: flex;
+            }
+
+            nav ul.active {
+                right: 0;
+            }
+        }
+        @media (max-width: 968px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.75rem;
+            }
+
+            .hero-image {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .interests-grid,
+            .education-grid,
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-item {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .section-title {
+                font-size: 2.25rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header-container">
+            <img src="Portfolio_Logo.png" width="50px" alt="Portfolio Logo">
+            <nav>
+                <ul id="navMenu">
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Ainesh Phanithi</h1>
+                <p class="hero-subtitle">Strategy Consultant | Public Policy | Product Management</p>
+                <p class="hero-bio">
+                    Ainesh helps governments and organizations translate digital and AI potential into real-world impact. Blending strategy, technology, socio-economics, and public policy, he pairs structured consulting frameworks with practical implementation to solve complex public sector problems at scale.
+                </p>
+                <div class="hero-cta">
+                    <a href="#experience" class="btn btn-primary">View Experience</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Replace with your actual image -->
+                <img src="Ainesh_Professional_Photo.png" alt="Ainesh Phanithi">
+                <div class="hero-image-placeholder">Your Professional Photo</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="research">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Academic & Research Focus</div>
+                <h2 class="section-title">Research Interests</h2>
+                <p class="section-description">
+                    His research explores the intersection of public sector strategy, socio-economics, innovation and technology, focusing on sustainable development and institutional theory.
+                </p>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <h3>Science, Technology & Innovation Policy</h3>
+                    <p>
+                        Examining how nations leverage technology and innovation systems to drive sustainable development, with a focus on institutional frameworks, R&D ecosystems, and evidence-based policy design for emerging markets.
+                    </p>
+                    <div class="interest-keywords">
+                        <span class="keyword">STI Policy</span>
+                        <span class="keyword">Sustainable Development</span>
+                        <span class="keyword">Inclusive Innovation</span>
+                    </div>
+                </div>
+                <div class="interest-card">
+                    <h3>Digital Transformation & Healthcare Innovation</h3>
+                    <p>
+                        Investigating digital health interventions, supply chain resilience, and technology-enabled service delivery models that improve healthcare access and outcomes in resource-constrained settings.
+                    </p>
+                    <div class="interest-keywords">
+                        <span class="keyword">Digital Health</span>
+                        <span class="keyword">Healthcare Systems</span>
+                        <span class="keyword">Innovation Strategy</span>
+                    </div>
+                </div>
+                <div class="interest-card">
+                    <h3>Development Economics & Public Finance</h3>
+                    <p>
+                        Analysing economic policy mechanisms, public-private partnerships, and innovative financing structures that accelerate sustainable development goals and economic resilience in developing economies.
+                    </p>
+                    <div class="interest-keywords">
+                        <span class="keyword">Development Economics</span>
+                        <span class="keyword">Blended Finance</span>
+                        <span class="keyword">PPP Frameworks</span>
+                    </div>
+                </div>
+                <div class="interest-card">
+                    <h3>Institutional Analysis & Policy Evaluation</h3>
+                    <p>
+                        Employing causal inference methodologies and institutional analysis to evaluate policy effectiveness, understand implementation barriers, and design evidence-based interventions for systemic change.
+                    </p>
+                    <div class="interest-keywords">
+                        <span class="keyword">Causal Inference</span>
+                        <span class="keyword">Policy Evaluation</span>
+                        <span class="keyword">Institutional Economics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Professional Background</div>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-date">Jun 2023 – Present</div>
+                    <div class="experience-content">
+                        <h3>Senior Consultant</h3>
+                        <p class="experience-company">EY</p>
+                        <p class="experience-description">
+                            Leading strategic engagements across digital adoption, healthcare transformation, finance, and economic development for state governments, countries in Asia-Pacific, multilateral organisations, and a Fortune 10 technology conglomerate.
+                        </p>
+                        <ul class="experience-achievements">
+                            <li>Engineered a Digital & AI Framework, enabling systematic and scalable digital transformation across 100+ countries</li>
+                            <li>Formulated B20 recommendations for India's G20 presidency influencing $1.25 Trillion in policy commitments across 19 member nations</li>
+                            <li>Architected Global SDG Acceleration Fund bringing together governments, private sector, and philanthropies for blended finance</li>
+                            <li>Spearheaded innovation ecosystem redesign for a state government, driving the state to #1 rank in national innovation rankings</li>
+                            <li>Recognised as Collaboration Extraordinaire for forming reliable partnerships with clients in pursuit of collective success</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">May 2022 – Jul 2022</div>
+                    <div class="experience-content">
+                        <h3>Research Intern, Healthcare Innovation Team</h3>
+                        <p class="experience-company">Social Alpha</p>
+                        <p class="experience-description">
+                            Conducted regulatory landscape analysis and market entry strategy development for healthcare innovation portfolio companies across global markets.
+                        </p>
+                        <ul class="experience-achievements">
+                            <li>Performed regulatory landscape analysis across global markets for portfolio companies</li>
+                            <li>Developed market entry and policy advocacy strategies for medical device portfolios</li>
+                            <li>Evaluated market opportunities for mental health interventions through systematic analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">Mar 2021 – Jan 2022</div>
+                    <div class="experience-content">
+                        <h3>Associate Product Manager</h3>
+                        <p class="experience-company">Mindler</p>
+                        <p class="experience-description">
+                            Led cross-platform product development, go-to-market strategy, and cost optimization initiatives for flagship SaaS product in the Ed-Tech space.
+                        </p>
+                        <ul class="experience-achievements">
+                            <li>Led company's first cross-platform launch acquiring 30,000+ users within 3 months</li>
+                            <li>Delivered 30% ARPU growth by launching 5 premium features for flagship SaaS product</li>
+                            <li>Implemented AI-powered chat automation reducing live support requirements by 50%</li>
+                            <li>Managed product strategy, user research, and feature prioritization for the SaaS product</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">Dec 2020 – Mar 2021</div>
+                    <div class="experience-content">
+                        <h3>Cyber Security Consultant</h3>
+                        <p class="experience-company">Valsatech Corp</p>
+                        <p class="experience-description">
+                            Developed and implemented cybersecurity frameworks for global client portfolios through risk assessment and threat analysis methodologies.
+                        </p>
+                        <ul class="experience-achievements">
+                            <li>Delivered Managed Security Services systematically reducing organisational vulnerability exposure</li>
+                            <li>Conducted executive-level cybersecurity presentations and product strategy documentation</li>
+                            <li>Employed risk assessment methodologies and threat analysis frameworks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">Sep 2020 – Jul 2021</div>
+                    <div class="experience-content">
+                        <h3>Co-Founder</h3>
+                        <p class="experience-company">The Coding Culture</p>
+                        <p class="experience-description">
+                            Built and managed technical education community focused on computer science education and algorithmic training.
+                        </p>
+                        <ul class="experience-achievements">
+                            <li>Scaled community from 0 to 2,000+ members across 200+ Indian engineering colleges</li>
+                            <li>Conducted technical webinars attracting 3,000+ participants on algorithms and computer science</li>
+                            <li>Managed day-to-day community operations, developed DSA curriculum and built strategic partnerships</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">Aug 2020 – Jul 2021</div>
+                    <div class="experience-content">
+                        <h3>GDSC Lead</h3>
+                        <p class="experience-company">Google Developer Student Clubs - CVR College of Engineering</p>
+                        <p class="experience-description">
+                            Led business and technology solutions development using Google technologies while coordinating peer-to-peer learning initiatives.
+                        </p>
+                        <ul class="experience-achievements">
+                            <li>Developed technology solutions for 5+ businesses in Hyderabad using Google technologies</li>
+                            <li>Coordinated with Google Developer Student Clubs globally to institute peer learning in 50+ engineering colleges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Academic Credentials</div>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-year">2021 - 2023</div>
+                    <h3>Master's in Public Policy</h3>
+                    <p class="education-institution">Indian Institute of Technology Delhi (IIT Delhi)</p>
+                    <div class="education-details">
+                        <p>Science, Technology, Innovation, and Development | CGPA: 8.0/10</p>
+                        <ul class="education-honors">
+                            <li>STI and Sustainable Development</li>
+                            <li>Causal Inference and Assessment</li>
+                            <li>Development Economics, Microeconomics</li>
+                            <li>Statistics for Public Policy</li>
+                            <li>Tools for Policy Analysis</li>
+                            <li>Public Institutions in India</li>
+                            <li>Inclusive Innovation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-year">2019 - 2020</div>
+                    <h3>Technology Entrepreneurship Program</h3>
+                    <p class="education-institution">Indian School of Business</p>
+                    <div class="education-details">
+                        <p>Grade: A (Highest in Cohort)</p>
+                        <ul class="education-honors">
+                            <li>Selected as one of top 380 students statewide</li>
+                            <li>Capstone: Mental health interventions leveraging digital services</li>
+                            <li>Focus on technology entrepreneurship and innovation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-year">2017 - 2021</div>
+                    <h3>Bachelor of Technology</h3>
+                    <p class="education-institution">JNTU Hyderabad - CVR College of Engineering</p>
+                    <div class="education-details">
+                        <p>Information Technology | CGPA: 9.1/10</p>
+                        <ul class="education-honors">
+                            <li>Best Technical Project Award (batch of 120 students)</li>
+                            <li>Cloud Computing, Data Structures, Algorithms</li>
+                            <li>Software Engineering, Web Technologies</li>
+                            <li>Object Oriented Programming, Operating Systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-year">2022</div>
+                    <h3>Winter School</h3>
+                    <p class="education-institution">IIM Ahmedabad - Right to Education Resource Centre</p>
+                    <div class="education-details">
+                        <ul class="education-honors">
+                            <li>Contemporary challenges in public policy and social change</li>
+                            <li>Research on affirmative action performance</li>
+                            <li>Focus on inequalities and social transformation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Featured Work</div>
+                <h2 class="section-title">Key Projects</h2>
+            </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-category">Digital Strategy</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Digital & AI Framework</h3>
+                        <p class="project-description">
+                            Engineered a scalable Digital & AI framework, enabling systematic adoption across multiple LMICs, through standardized implementation roadmaps, capability assessments, and readiness matrices.
+                        </p>
+                        <p class="project-outcomes">Impact:</p>
+                        <div class="project-metrics">
+                            <span class="project-metric">LMICs</span>
+                            <span class="project-metric">Scalable Model</span>
+                            <span class="project-metric">Multilateral Organisation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-category">G20 Policy</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Global Economic Recovery Financing</h3>
+                        <p class="project-description">
+                            Formulated B20 recommendations for India's G20 presidency, architecting the Global SDG Acceleration Fund and developing financing allocation frameworks for sustainable development.
+                        </p>
+                        <p class="project-outcomes">Results:</p>
+                        <div class="project-metrics">
+                            <span class="project-metric">$1.25T Commitments</span>
+                            <span class="project-metric">19 Member Nations</span>
+                            <span class="project-metric">Multi-Donor Fund</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-category">Digital Strategy</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Centre of Excellence</h3>
+                        <p class="project-description">
+                            Catalysed establishment of AI Centre of Excellence for Fortune 10 tech conglomerate in APAC, employing organisational change management theory and technology adoption frameworks.
+                        </p>
+                        <p class="project-outcomes">Achievement:</p>
+                        <div class="project-metrics">
+                            <span class="project-metric">Fortune 10 Client</span>
+                            <span class="project-metric">APAC Region</span>
+                            <span class="project-metric">Competitive Advantage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-category">State Development</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Innovation Ecosystem Transformation</h3>
+                        <p class="project-description">
+                            Redesigned state innovation ecosystem employing cluster theory and competitive advantage analysis, driving the state to #1 rank in national innovation rankings through strategic partnerships.
+                        </p>
+                        <p class="project-outcomes">Impact:</p>
+                        <div class="project-metrics">
+                            <span class="project-metric">#1 National Rank</span>
+                            <span class="project-metric">GCC Incentives</span>
+                            <span class="project-metric">AI & Analytics Hub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-category">Public Health</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Preventive Health Policy Framework</h3>
+                        <p class="project-description">
+                            Conducted comparative policy analysis across 3 countries in the Asia-Pacific, and developed evidence-based guidelines for NCD burden reduction, strengthen health systems, and preventive health protocols.
+                        </p>
+                        <p class="project-outcomes">Results:</p>
+                        <div class="project-metrics">
+                            <span class="project-metric">40% Burden Reduction</span>
+                            <span class="project-metric">3 Countries</span>
+                            <span class="project-metric">MDB Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-category">Financial Inclusion</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cooperative Finance Strategy</h3>
+                        <p class="project-description">
+                            Crafted go-to-market strategy for cooperatives by applying behavioural economic principles to design scalable interventions benefitting 290 million citizens in APAC.
+                        </p>
+                        <p class="project-outcomes">Impact:</p>
+                        <div class="project-metrics">
+                            <span class="project-metric">290M Citizens</span>
+                            <span class="project-metric">$50M Fund</span>
+                            <span class="project-metric">Behavioral Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Capabilities</div>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Research Methodologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Institutional Analysis</span>
+                        <span class="skill-tag">Policy Evaluation</span>
+                        <span class="skill-tag">Causal Inference</span>
+                        <span class="skill-tag">Benchmarking</span>
+                        <span class="skill-tag">Difference-in-Difference</span>
+                        <span class="skill-tag">Comparative Analysis</span>
+                        <span class="skill-tag">Root-Cause Analysis</span>
+                        <span class="skill-tag">Systems Thinking</span>
+                        <span class="skill-tag">Survey Designing</span>
+                        <span class="skill-tag">Research</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Strategic Consulting</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Corporate Strategy</span>
+                        <span class="skill-tag">Public Sector Strategy</span>
+                        <span class="skill-tag">Product Strategy</span>
+                        <span class="skill-tag">Digital Transformation</span>
+                        <span class="skill-tag">Go-to-Market Strategy</span>
+                        <span class="skill-tag">Transaction Advisory</span>
+                        <span class="skill-tag">PPP Frameworks</span>
+                        <span class="skill-tag">Analytical Frameworks</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Technical & Analytical</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microsoft PowerPoint</span>
+                        <span class="skill-tag">Microsoft Excel</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Statistical Analysis</span>
+                        <span class="skill-tag">Financial Modeling</span>
+                        <span class="skill-tag">Cost Optimisation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Domain Expertise</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Digital Transformation</span>
+                        <span class="skill-tag">Healthcare Systems</span>
+                        <span class="skill-tag">Supply Chain Strategy</span>
+                        <span class="skill-tag">Innovation Policy</span>
+                        <span class="skill-tag">AI Adoption</span>
+                        <span class="skill-tag">Digital Health</span>
+                        <span class="skill-tag">Blended Finance</span>
+                        <span class="skill-tag">ESG Integration</span>
+                        <span class="skill-tag">Economic Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Let's Connect</div>
+                <h2 class="section-title">Get in Touch</h2>
+            </div>
+            <div class="contact-container">
+                <p>
+                    Ainesh is enthusiastic regarding thoughtful conversations around research, consulting, and collaborative problem-solving. If you’re navigating complex strategic challenges, advancing technology adoption, or exploring academic partnerships, he would love the opportunity to connect and work together.
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="contact-icon">📅</span>
+                        <div class="contact-label">Schedule a Call</div>
+                        <div class="contact-value">
+                            <a href="https://calendly.com/aineshp/connect-with-ainesh" target="_blank">Ainesh's Calendar</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">
+                            <a href="mailto:aineshp@outlook.com">aineshp@outlook.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <div class="contact-label">LinkedIn</div>
+                        <div class="contact-value">
+                            <a href="https://www.linkedin.com/in/ainesh-phanithi/" target="_blank">in/aineshphanithi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section class="social-links">
+        <div class="container">
+            <h3 class="social-links-title">Find Me Online</h3>
+            <div class="social-grid">
+                <!-- Substack -->
+                <a href="https://substack.com/@aineshp?" target="_blank" class="social-item">
+                    <svg class="social-logo" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M764.166 348.371H236.319V419.402H764.166V348.371Z"/>
+                        <path fill="currentColor" d="M236.319 483.752V813.999L500.242 666.512L764.166 813.999V483.752H236.319Z"/>
+                        <path fill="currentColor" d="M764.166 213H236.319V284.031H764.166V213Z"/>
+                    </svg>
+                    <span class="social-name">Substack</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/Aineshphanithi" target="_blank" class="social-item">
+                    <i class="fa-brands fa-github social-logo"></i>
+                    <span class="social-name">GitHub</span>
+                </a>
+
+                <!-- X (Twitter) -->
+                <a href="https://x.com/AineshPhanithi" target="_blank" class="social-item">
+                    <i class="fa-brands fa-x-twitter social-logo"></i>
+                    <span class="social-name">X</span>
+                </a>
+
+                <!-- LinkedIn
+                <a href="https://www.linkedin.com/in/ainesh-phanithi/" target="_blank" class="social-item">
+                    <i class="fa-brands fa-linkedin social-logo"></i>
+                    <span class="social-name">LinkedIn</span>
+                </a> -->
+
+                <!-- Medium (Optional) -->
+                <a href="https://medium.com/@aineshp" target="_blank" class="social-item">
+                    <i class="fa-brands fa-medium social-logo"></i>
+                    <span class="social-name">Medium</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ainesh Phanithi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', (e) => {
+                e.stopPropagation();
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link
+            document.querySelectorAll('#navMenu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+       // Lazy load hero image with fade-in effect
+        window.addEventListener('DOMContentLoaded', () => {
+            const heroImg = document.querySelector('.hero-image img');
+            if (heroImg) {
+                heroImg.addEventListener('load', () => {
+                    heroImg.classList.add('loaded');
+                });
+                if (heroImg.complete) {
+                    heroImg.classList.add('loaded');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
