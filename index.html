@@ -4,22 +4,22 @@
     <!-- Credits to Claude for the template and the debugging assistance :D -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ainesh Phanithi - Strategy Consultant</title>
-    
+    <title>Ainesh Phanithi - Technology & Innovation Management</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="Portfolio_Logo.png">
-    
+
     <!-- Open Graph / Social Media Preview -->
     <meta property="og:title" content="Ainesh Phanithi">
-    <meta property="og:description" content="Strategy Consultant specialising in Public Policy, Digital Transformation, and Innovation">
+    <meta property="og:description" content="PhD Researcher bridging Business and Public Policy, specialising in Technology & Innovation Management, Digital Transformation, and AI Strategy">
     <meta property="og:image" content="https://aineshphanithi.github.io/Portfolio_Logo.png">
     <meta property="og:url" content="https://aineshphanithi.github.io/">
     <meta property="og:type" content="website">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ainesh Phanithi">
-    <meta name="twitter:description" content="Strategy Consultant specialising in Public Policy, Digital Transformation, and Innovation">
+    <meta name="twitter:description" content="PhD Researcher bridging Business and Public Policy, specialising in Technology & Innovation Management, Digital Transformation, and AI Strategy">
     <meta name="twitter:image" content="https://aineshphanithi.github.io/aineshphanithi.github.io/Portfolio_Logo.png">
     
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -494,6 +494,48 @@
             position: absolute;
             left: 0;
             color: var(--gold);
+        }
+
+        /* Publications & Policy Reports */
+        .publications {
+            background-color: white;
+        }
+
+        .publications-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .publication-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: baseline;
+            gap: 1rem;
+            padding: 1.75rem 0;
+            border-bottom: 1px solid rgba(30, 58, 95, 0.1);
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        .publication-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.15rem;
+            color: var(--navy);
+            margin-bottom: 0.375rem;
+        }
+
+        .publication-meta {
+            color: var(--light-slate);
+            font-size: 0.95rem;
+        }
+
+        .publication-year {
+            color: var(--burgundy);
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
         }
 
         /* Skills & Expertise */
@@ -1004,6 +1046,11 @@
                 gap: 1rem;
             }
 
+            .publication-item {
+                grid-template-columns: 1fr;
+                gap: 0.375rem;
+            }
+
             .section-title {
                 font-size: 2.25rem;
             }
@@ -1046,6 +1093,7 @@
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#publications">Publications</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -1062,12 +1110,12 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1>Ainesh Phanithi</h1>
-                <p class="hero-subtitle">Strategy Consultant | Public Policy | Product Management</p>
+                <p class="hero-subtitle">PhD Researcher | Technology & Innovation Management | Business Strategy & Public Policy</p>
                 <p class="hero-bio">
-                    Ainesh helps governments and organisations translate digital and AI potential into real-world impact. Blending strategy, technology, socio-economics, and public policy, he pairs structured consulting frameworks with practical implementation to solve complex public sector problems at scale.
+                    Ainesh studies how organisations — governments, multilateral institutions, and private enterprises alike — build the institutional capability to adopt and scale emerging technologies. Trained in public policy and grounded in hands-on strategy work across both public and private sectors, his research bridges institutional theory, innovation management, and technology strategy to understand how organisations design lasting capacity for change.
                 </p>
                 <div class="hero-cta">
-                    <a href="#experience" class="btn btn-primary">View Experience</a>
+                    <a href="#research" class="btn btn-primary">View Research Interests</a>
                     <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                 </div>
             </div>
@@ -1085,7 +1133,7 @@
                 <div class="section-label">Academic & Research Focus</div>
                 <h2 class="section-title">Research Interests</h2>
                 <p class="section-description">
-                    His research explores the intersection of public sector strategy, socio-economics, innovation and technology, focusing on sustainable development and institutional theory.
+                    His research sits at the intersection of business and public policy, examining how public agencies and private enterprises alike build institutional capability for technology adoption, sustainable development, and strategic change.
                 </p>
             </div>
             <div class="interests-grid">
@@ -1133,6 +1181,28 @@
                         <span class="keyword">Institutional Economics</span>
                     </div>
                 </div>
+                <div class="interest-card">
+                    <h3>Technology & Innovation Management</h3>
+                    <p>
+                        Studying how organisations — public and private — build the organisational structures and maturity frameworks needed to adopt and institutionalise emerging technology, including AI, at scale.
+                    </p>
+                    <div class="interest-keywords">
+                        <span class="keyword">Technology Adoption</span>
+                        <span class="keyword">Organisational Change</span>
+                        <span class="keyword">Maturity Frameworks</span>
+                    </div>
+                </div>
+                <div class="interest-card">
+                    <h3>Strategic Management & Go-to-Market Analysis</h3>
+                    <p>
+                        Examining how firms design competitive positioning, go-to-market strategy, and new service development in complex, regulated markets, drawing on competitive advantage theory and market entry frameworks.
+                    </p>
+                    <div class="interest-keywords">
+                        <span class="keyword">Competitive Strategy</span>
+                        <span class="keyword">Market Entry</span>
+                        <span class="keyword">Service Innovation</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1153,11 +1223,13 @@
                             Leading strategic engagements across digital adoption, healthcare transformation, finance, and economic development for state governments, countries in Asia-Pacific, multilateral organisations, and a Fortune 10 technology conglomerate.
                         </p>
                         <ul class="experience-achievements">
-                            <li>Engineered a Digital & AI Framework, enabling systematic and scalable digital transformation across 100+ countries</li>
-                            <li>Formulated B20 recommendations for India's G20 presidency influencing $1.25 Trillion in policy commitments across 19 member nations</li>
-                            <li>Architected Global SDG Acceleration Fund bringing together governments, private sector, and philanthropies for blended finance</li>
-                            <li>Spearheaded innovation ecosystem redesign for a state government, driving the state to #1 rank in national innovation rankings</li>
-                            <li>Recognised as Collaboration Extraordinaire for forming reliable partnerships with clients in pursuit of collective success</li>
+                            <li>Engineered a Digital & AI Framework, enabling systematic and scalable digital transformation across 100+ countries for a multilateral organisation</li>
+                            <li>Led establishment of an AI Centre of Excellence for a Fortune 10 technology conglomerate, applying organisational change management theory to drive institutional AI adoption</li>
+                            <li>Incubated new managed services offerings from concept to live client engagement, building go-to-market models through market sizing and competitive benchmarking</li>
+                            <li>Formulated B20 recommendations for India's G20 presidency influencing $1.25 Trillion in policy commitments across 19 member nations, and architected the Global SDG Acceleration Fund</li>
+                            <li>Spearheaded innovation ecosystem redesign for a state government using cluster theory and competitive advantage analysis, driving the state to #1 rank in national innovation rankings</li>
+                            <li>Conducted comparative institutional analysis across multiple Asia-Pacific markets, applying causal inference methods to evaluate policy adoption for public health and development partners</li>
+                            <li>Recognised as Client Extraordinaire and Collaboration Extraordinaire for sustained delivery impact and enduring client partnerships</li>
                         </ul>
                     </div>
                 </div>
@@ -1204,7 +1276,7 @@
                             Developed and implemented cybersecurity frameworks for global client portfolios through risk assessment and threat analysis methodologies.
                         </p>
                         <ul class="experience-achievements">
-                            <li>Delivered Managed Security Services systematically reducing organisational vulnerability exposure</li>
+                            <li>Delivered security monitoring and advisory services, systematically reducing organisational vulnerability exposure</li>
                             <li>Conducted executive-level cybersecurity presentations and product strategy documentation</li>
                             <li>Employed risk assessment methodologies and threat analysis frameworks</li>
                         </ul>
@@ -1258,6 +1330,7 @@
                     <p class="education-institution">Indian Institute of Technology Delhi (IIT Delhi)</p>
                     <div class="education-details">
                         <p>Science, Technology, Innovation, and Development | CGPA: 8.0/10</p>
+                        <p style="margin-top: 0.75rem;"><strong>Thesis:</strong> "Composing a Framework for GovTech Ecosystems" — an eight-parameter, 36-component maturity assessment framework developed through systematic literature review and comparative analysis of national ecosystems, validated via case studies and expert interviews.</p>
                         <ul class="education-honors">
                             <li>STI and Sustainable Development</li>
                             <li>Causal Inference and Assessment</li>
@@ -1435,6 +1508,93 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fa-solid fa-diagram-project project-icon"></i>
+                        <span class="project-category">Academic Research</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>GovTech Ecosystems Maturity Framework</h3>
+                        <p class="project-description">
+                            Developed an original maturity assessment framework for government technology ecosystems through systematic literature review, comparative analysis of national ecosystems, and validation via case studies and expert interviews.
+                        </p>
+                        <p class="project-outcomes">Contribution:</p>
+                        <div class="project-metrics">
+                            <span class="project-metric">8-Parameter Model</span>
+                            <span class="project-metric">36 Components</span>
+                            <span class="project-metric">Master's Thesis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fa-solid fa-briefcase project-icon"></i>
+                        <span class="project-category">Business Strategy</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Managed Services Incubation</h3>
+                        <p class="project-description">
+                            Incubated new managed services offerings from concept to live client engagement, building go-to-market models through market sizing and competitive benchmarking that were adopted as standard practice by client-facing teams.
+                        </p>
+                        <p class="project-outcomes">Results:</p>
+                        <div class="project-metrics">
+                            <span class="project-metric">3 New Offerings</span>
+                            <span class="project-metric">$300M+ Pursuits</span>
+                            <span class="project-metric">80% Win Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Applied Research Output</div>
+                <h2 class="section-title">Publications & Policy Reports</h2>
+                <p class="section-description">
+                    Original frameworks and policy reports developed for government and multilateral partners, spanning public health, financial inclusion, and institutional capacity building.
+                </p>
+            </div>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div>
+                        <h3 class="publication-title">Public-Private Partnership Implementation Handbook</h3>
+                        <p class="publication-meta">Multilateral development bank — institutional analysis of PPP execution and design recommendations for public sector capacity</p>
+                    </div>
+                    <span class="publication-year">2024</span>
+                </div>
+                <div class="publication-item">
+                    <div>
+                        <h3 class="publication-title">National Policy Guidelines on Non-Communicable Disease Prevention</h3>
+                        <p class="publication-meta">Three national guidelines for a government health ministry, Southeast Asia — evidence-based protocols using epidemiological data analysis</p>
+                    </div>
+                    <span class="publication-year">2024</span>
+                </div>
+                <div class="publication-item">
+                    <div>
+                        <h3 class="publication-title">B20 Policy Recommendations on Financing for Global Economic Recovery</h3>
+                        <p class="publication-meta">India's G20 presidency — sectoral analysis and econometric profiling across 19 member economies</p>
+                    </div>
+                    <span class="publication-year">2023</span>
+                </div>
+                <div class="publication-item">
+                    <div>
+                        <h3 class="publication-title">Medical Value Travel Policy</h3>
+                        <p class="publication-meta">State government, India — market entry and positioning framework through international benchmarking and demand analysis</p>
+                    </div>
+                    <span class="publication-year">2024</span>
+                </div>
+                <div class="publication-item">
+                    <div>
+                        <h3 class="publication-title">Health Sector Private Investment Promotion Policy</h3>
+                        <p class="publication-meta">State government, India — fiscal incentive design built on public-private partnership mechanisms</p>
+                    </div>
+                    <span class="publication-year">2024</span>
+                </div>
             </div>
         </div>
     </section>
@@ -1458,6 +1618,8 @@
                         <span class="skill-tag">Root-Cause Analysis</span>
                         <span class="skill-tag">Systems Thinking</span>
                         <span class="skill-tag">Survey Designing</span>
+                        <span class="skill-tag">Framework & Construct Development</span>
+                        <span class="skill-tag">Optimisation Modelling</span>
                         <span class="skill-tag">Research</span>
                     </div>
                 </div>
@@ -1470,6 +1632,8 @@
                         <span class="skill-tag">Product Strategy</span>
                         <span class="skill-tag">Digital Transformation</span>
                         <span class="skill-tag">Go-to-Market Strategy</span>
+                        <span class="skill-tag">Market Entry Strategy</span>
+                        <span class="skill-tag">Competitive Benchmarking</span>
                         <span class="skill-tag">Transaction Advisory</span>
                         <span class="skill-tag">PPP Frameworks</span>
                         <span class="skill-tag">Analytical Frameworks</span>
@@ -1479,11 +1643,15 @@
                 <div class="skill-category">
                     <h3>Technical & Analytical</h3>
                     <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Stata</span>
+                        <span class="skill-tag">SQL</span>
                         <span class="skill-tag">Microsoft PowerPoint</span>
                         <span class="skill-tag">Microsoft Excel</span>
                         <span class="skill-tag">Power BI</span>
                         <span class="skill-tag">Data Visualisation</span>
-                        <span class="skill-tag">Statistical Analysis</span>
+                        <span class="skill-tag">Statistical & Econometric Analysis</span>
                         <span class="skill-tag">Financial Modeling</span>
                         <span class="skill-tag">Cost Optimisation</span>
                     </div>
@@ -1493,6 +1661,8 @@
                     <h3>Domain Expertise</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Digital Transformation</span>
+                        <span class="skill-tag">Organisational Change Management</span>
+                        <span class="skill-tag">Technology Adoption</span>
                         <span class="skill-tag">Healthcare Systems</span>
                         <span class="skill-tag">Supply Chain Strategy</span>
                         <span class="skill-tag">Innovation Policy</span>
@@ -1515,7 +1685,7 @@
             </div>
             <div class="contact-container">
                 <p>
-                    Ainesh is enthusiastic about thoughtful conversations around research, consulting, and collaborative problem-solving. If you’re navigating complex strategic challenges, advancing technology adoption, or exploring academic partnerships, he would love the opportunity to connect and work together.
+                    Ainesh is enthusiastic about thoughtful conversations around research, consulting, and collaborative problem-solving. Whether you're exploring doctoral research in business or public policy, navigating complex strategic challenges across sectors, or advancing technology adoption, he would love the opportunity to connect and work together.
                 </p>
                 <div class="contact-grid">
                     <div class="contact-item">
